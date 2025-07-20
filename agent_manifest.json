@@ -1,0 +1,26 @@
+{
+  "agent_name": "base-agent",
+  "version": "0.1.0",
+  "tier_access": [
+    "T00",
+    "T10",
+    "T20"
+  ],
+  "roles": [
+    "observer",
+    "path-suggester",
+    "validation-bridge"
+  ],
+  "archetype": "Federation\u2013Rogue hybrid",
+  "deployment": {
+    "subdomain": "ai.theothersystem.com",
+    "webhook_url": "https://ai.theothersystem.com/webhook"
+  },
+  "security": {
+    "auth_mode": "JWT",
+    "escalation_chain": [
+      "audit_bot",
+      "chairman_bot"
+    ]
+  }
+}
